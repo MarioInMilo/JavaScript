@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+}
+
+
+
+#map {
+	width: 1900px;
+	height: 930px;
+	background: url(image/pustoe-futbolnoe-pole-vid-sverxu.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+#ball {
+	position: absolute;
+	top: 45%;
+	left: 47.4%;
+	width: 100px;
+	transition: 0.8s;
+}

@@ -1,0 +1,65 @@
+.general {
+	width: 1400px;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.general__circle {
+	margin: 10px;
+	border-radius: 15px;
+	border: 1px solid black;
+	width: 70%;
+	height: 90%;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(20, 57, 82, 0.921);
+
+
+}
+
+.circle {
+	width: calc((100% / 3) - 20px);
+	height: 90%;
+	border-radius: 60%;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-color: rgba(27, 79, 114, 0.421);
+}
+
+.button__div {
+	height: 90%;
+	width: 20%;
+}
+
+.btn {
+	height: 100%;
+	width: 100%;
+	border-radius: 15px;
+	border: 1px solid black;
+	font-size: 300%;
+	background-color: rgba(20, 57, 82, 0.921);
+
+}
+
+
+.circle.red {
+	background-color: red;
+	box-shadow: 0 0 30px red;
+	transition: 0.5s;
+}
+
+.circle.orange {
+	background-color: orange;
+	box-shadow: 0 0 30px orange;
+	transition: 0.5s;
+}
+
+.circle.green {
+	background-color: green;
+	box-shadow: 0 0 50px green;
+	transition: 0.5s;
+}
