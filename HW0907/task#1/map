@@ -1,0 +1,73 @@
+let trasare = {
+	x: randon(500),
+	y: randon(500)
+};
+
+let mousePosition = {
+	x: 0,
+	y: 0
+};
+
+
+
+
+$(".user__position").html(clickCount);
+$("div.map").click(function (e) {
+	mousePosition.x = e.offsetX;
+	mousePosition.y = e.offsetY;
+	getDisctance();
+	count();
+	showMessageForUser(getDisctance());
+
+});
+var clickCount = 0;
+function count() {
+	clickCount = clickCount + 1;
+	$(".count__click").html(clickCount);
+};
+
+function getDisctance() {
+	let result = Math.sqrt(Math.pow((mousePosition.x - trasare.x), 2) + Math.pow((mousePosition.y - trasare.y), 2));
+	return (result);
+
+};
+function randon(max) {
+	return Math.floor(Math.random() * max);
+};
+
+
+
+function showMessageForUser(dist) {
+	let result = dist;
+	if (result > 600) {
+		$(".user__position").html("Очень холодно");
+		$(".user__position").css('color', 'black')
+	} else if (result > 500 && result < 600) {
+		$(".user__position").html("Холодно");
+		$(".user__position").css('color', 'blue')
+	} else if (result > 400 && result < 500) {
+		$(".user__position").html("Прохладно");
+		$(".user__position").css('color', 'yellow')
+	} else if (result > 300 && result < 400) {
+		$(".user__position").html("Тепло");
+		$(".user__position").css('color', 'orange')
+	} else if (result > 200 && result < 300) {
+		$(".user__position").html("Очень тело");
+		$(".user__position").css('color', 'pink')
+	} else if (result > 100 && result < 200) {
+		$(".user__position").html("Горячо");
+		$(".user__position").css('color', 'red')
+	} else if (result > 0 && result < 100) {
+		$(".user__position").html("U WON!!!");
+		$(".user__position").css({
+			"color": "purple",
+			"text-shadow": "1px 1px 2px blue",
+			"font-size": "40px"
+		});
+		$(".us__pos").css({
+			"background-color": "green",
+
+		});
+	}
+};
+
