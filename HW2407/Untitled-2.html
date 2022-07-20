@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Shop</title>
+</head>
+
+<body>
+	<div class="general">
+		<form id="prod__form">
+			<label for="prod__name">Наименование товара</label>
+			<select name="" id="prod__name"></select>
+			<label for="prod__firm">Фирма</label>
+			<input type="text" id="prod__firm">
+			<label for="prod__color">Цвет</label>
+			<select name="" id="prod__color"></select>
+			<label for="prod__cost">Цена</label>
+			<input type="text" id="prod__cost">
+		</form>
+		<button id="but" onclick="addNewProd()">Добавить</button>
+
+		<table id="table">
+			<thead>
+				<th class="th__a">Наименование товара</th>
+				<th class="th__a">Фирма</th>
+				<th class="th__a">Цвет</th>
+				<th class="th__a">Стоимость</th>
+				<th class="th__a">Операции</th>
+			</thead>
+			<tbody class="table__prod">
+
+			</tbody>
+		</table>
+	</div>
+</body>
+<script src="newScript.js"></script>
+
+</html>

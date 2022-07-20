@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+}
+
+
+.general {
+	width: 1700px;
+	height: 100%;
+}
+
+form {
+	border: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+}
+
+#but {
+	width: 52.4%;
+}
+
+#prod__form {
+	width: 52.3%;
+}
+
+td {
+	font-size: 30px;
+}
+
+thead th {
+	font-size: 30px;
+	padding-right: 15px;
+	border: 1px solid black;
+}
+
+tbody td {
+	padding-right: 15px;
+	text-transform: capitalize;
+	text-align: center;
+	border: 1px solid black;
+}
+
+
+#cost__id::after {
+	content: 'BYN';
+	color: green;
+	font-weight: bold;
+}
